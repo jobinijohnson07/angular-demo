@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="title">
+        <span>Logo</span>
+        <p>Welcome back! Please login to continue.  <br>
+            <Span>User Login</Span>
+        </p>
+    </div>
+  
+        <!-- <div class="row">
+            <div class="col">
+                <input type="text" [(ngModel)]="UserName" class="rounded border border-primary custom-input " placeholder="Username or email ">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" [(ngModel)]="UserName" class="rounded border border-primary custom-input "
+                    placeholder="Username or email ">
+            </div>
+        </div>
+    </div> -->
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5">
+    
+        <p class="h4 mb-4">Logo</p>
+    
+        <!-- Email -->
+        <input type="email" [(ngModel)]="UserName" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+    
+        <!-- Password -->
+        <input type="password" [(ngModel)]="Password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+    
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="">Forgot password?</a>
+            </div>
+        </div>
+    
+        <!-- Sign in button -->
+        <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+    
+    </form>
+    <!-- Default form login -->
+</div>
