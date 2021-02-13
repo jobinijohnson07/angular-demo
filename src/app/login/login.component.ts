@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,20 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  user:string | undefined;
-  password:string | undefined;
-
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  LoginUser()
-  {
-    if(this.user == "Admin" && this.password == "joby")
-    {
-      console.log("Login success");
-    }
+  ngOnInit(): void {
   }
 
 }

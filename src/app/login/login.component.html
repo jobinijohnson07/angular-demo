@@ -1,48 +1,57 @@
 <div class="container">
-    <div class="title">
-        <span>Logo</span>
-        <p>Welcome back! Please login to continue.  <br>
-            <Span>User Login</Span>
-        </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-card">
+                <img src="../../../../assets/Login.jpg">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 mt-4">
+                    <form>
+                        <span class="logo">Logo</span>
+                        <p>Welcome back! Please login to continue</p>
+                        <span>User Login</span>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Username or email"
+                                        required="" />
+                                    <!-- <ng-container *ngFor="let item of itemdetails;">{{item.ItemCode}}</ng-container> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" required="" />
+                                    <!-- <ng-container *ngFor="let item of itemdetails;">{{item.ItemCode}}</ng-container> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <!-- <div class="col-sm-6">
+                                    <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+                                </div> -->
+                                <div class="col-sm-6">
+                                    <div class="form-group form-check">
+                                        <p>Forgot Password?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="wrapper">
+                                    <button type="submit" class="btn btn-primary custom-input">Sign in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-  
-        <!-- <div class="row">
-            <div class="col">
-                <input type="text" [(ngModel)]="UserName" class="rounded border border-primary custom-input " placeholder="Username or email ">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <input type="text" [(ngModel)]="UserName" class="rounded border border-primary custom-input "
-                    placeholder="Username or email ">
-            </div>
-        </div>
-    </div> -->
-    <!-- Default form login -->
-    <form class="text-center border border-light p-5">
-    
-        <p class="h4 mb-4">Logo</p>
-    
-        <!-- Email -->
-        <input type="email" [(ngModel)]="UserName" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-    
-        <!-- Password -->
-        <input type="password" [(ngModel)]="Password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-    
-        <div class="d-flex justify-content-around">
-            <div>
-                <!-- Remember me -->
-                <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
-            </div>
-            <div>
-                <!-- Forgot password -->
-                <a href="">Forgot password?</a>
-            </div>
-        </div>
-    
-        <!-- Sign in button -->
-        <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
-    
-    </form>
-    <!-- Default form login -->
 </div>
